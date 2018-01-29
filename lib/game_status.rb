@@ -15,12 +15,14 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.each do |win_combo|
+  WIN_COMBINATIONS.detect do |win_combo|
     index_1 = win_combo[0]
     index_2 = win_combo[1]
     index_3 = win_combo[2]
-    position_1 = board[0]
-    
+    position_1 = board[index_1]
+    position_2 = board[index_2]
+    position_3 = board[index_3]
+    position_1 == position_2 && position_2 == position_3 && position_1 != " "
   end
 end 
 
