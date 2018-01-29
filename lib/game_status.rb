@@ -39,8 +39,8 @@ def draw?(board)
   end
 end
 
-def over?(array3)
-  if full?(array3) || !(won?(array3)) || draw?(array3)
+def over?(board)
+  if full?(board) || !(won?(array3)) || draw?(array3)
     puts "GAME OVER"
     return true
   else 
