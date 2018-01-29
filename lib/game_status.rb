@@ -42,3 +42,9 @@ end
 def over?(board)
   if won?(board) || full?(board) || draw?(board)
     puts "Game Over!"
+    returns true
+  else 
+    puts "Keep on going, there isn't a winner yet!"
+    returns false
+  end
+end
