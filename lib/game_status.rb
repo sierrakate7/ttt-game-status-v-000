@@ -51,6 +51,6 @@ end
 
 def winner(board)
   if winning_combo = won?
-    ("X", "X", "X")
+    board
 end
 end 
