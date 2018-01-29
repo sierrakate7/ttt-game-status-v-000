@@ -31,12 +31,13 @@ def full?(board)
  end
 
 
-def over?(array3)
-  if full?(array3) || !(won?(array3)) || draw?(array3)
-    puts "GAME OVER"
-    return true
-  else 
-    puts "it ain't over till it's over baby!"
+def draw?(board)
+  if full?(board) && !won?(board)
+    return true 
+  else
     return false 
-  end 
-end  
+  end
+end
+
+def over?(board)
+  
