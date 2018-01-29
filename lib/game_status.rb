@@ -1,4 +1,4 @@
-
+require 'pry'
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
@@ -50,7 +50,7 @@ def over?(board)
 end  
 
 def winner(board)
-  if winning_combo = won?
-    board
+  if winning_combo = won?(board)
+    binding.pry
 end
 end 
