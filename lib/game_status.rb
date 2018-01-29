@@ -14,8 +14,13 @@ WIN_COMBINATIONS = [
   [2,4,6]  #Right start diagonal
 ]
 
-def won?(board, array)
-  WIN_COMBINATIONS.each do
-  
+def won?(board)
+  WIN_COMBINATIONS.each do |win_combo|
+    index_1 = win_combo[0]
+    index_2 = win_combo[1]
+    index_3 = win_combo[2]
+    position_1 = board[0]
+    
+  end
 end 
 
