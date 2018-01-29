@@ -29,7 +29,7 @@ end
 def full?(board)
   !board.any? { |x| x == " " }
  end
-end 
+
 
 def draw?(board)
   if full?(board) && !won?(board)
