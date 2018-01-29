@@ -28,4 +28,7 @@ end
 
 def full?(board)
   !board.any? { |x| x == " " }
-end
+ end
+end 
+
+def draw
